@@ -1,15 +1,16 @@
-body {
-  background-position: center top right;
-  background-size: 250px ;
-  background-repeat: no-repeat;
-  padding-left: 10em;
+/* Jon Website CSS*/
+/* same class as Lawnservices*/
+.handyman {
+  width: 50%;
+  height:
+
 }
 body {
   background-color: #e6e6e6;
 }
 li {
   display: inline-block;
-  border-right: 4px solid #e6e6e6
+  border-right: 5px;
 }
 ul {
   padding: auto;
@@ -24,9 +25,23 @@ h1 {
   font-style: normal;
   padding-top: 10px;
 }
+/* CSS for Art.html*/
+.fortnite {
+  width: 50%;
+}
+/* CSS for RealEstate.html*/
+.super{
+  width: 50%;
+}
+/* CSS for Lawnservices.html*/
+
+/* CSS for Contact Me.html*/
  .jonface {
   width: 50%;
   height:
+ }
+ .form{
+   border-style: inset;
  }
 input[type=text], select {
   width: 50%;
