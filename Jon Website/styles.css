@@ -1,9 +1,7 @@
 /* Jon Website CSS*/
-/* same class as Lawnservices*/
-.handyman {
+/* same class as Lawnservices*/.handyman {
   width: 50%;
   height:
-
 }
 body {
   background-color: #e6e6e6;
@@ -42,6 +40,7 @@ h1 {
  }
  .form{
    border-style: inset;
+   width:50;
  }
 input[type=text], select {
   width: 50%;
@@ -51,4 +50,9 @@ input[type=text], select {
 input[type=email], select {
   width: 50%;
   display: list-item;
+}
+/* Footer*/
+footer{
+  font-style: italic;
+  font-size: 1.6;
 }
