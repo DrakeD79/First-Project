@@ -1,8 +1,8 @@
 body {
-  background-position: center top  ;
-  background-size: 400px  ;
+  background-position: center top right;
+  background-size: 250px ;
   background-repeat: no-repeat;
-
+  padding-left: 10em;
 }
 body {
   background-color: #e6e6e6;
@@ -12,6 +12,28 @@ li {
   border-right: 4px solid #e6e6e6
 }
 ul {
-  padding: ;
+  padding: auto;
+  padding-right: 10px;
+}
+ .main-nav li {
+   padding-top: 3em;
+   text-align: center;
+ }
+h1 {
+  font-size: 1em;
+  font-style: normal;
+  padding-top: 10px;
+}
+ .jonface {
+  width: 50%;
+  height:
+ }
+input[type=text], select {
+  width: 50%;
+  display: list-item;
 
+}
+input[type=email], select {
+  width: 50%;
+  display: list-item;
 }
