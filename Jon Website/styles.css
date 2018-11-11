@@ -1,54 +1,140 @@
 /* Jon Website CSS*/
-/* same class as Lawnservices*/
-.handyman {
-  width: 50%;
-  height:
+.first{
+  display:flex;
+  color: black;
+  padding: 10px;
+  flex:1;
+}
+.second{
+ color:#a9a9a9
+ display: inline-flex;
 
 }
+.homes{
+  padding-left: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-header {
+  text-align: center;
+  color: white;
+}
+.monkeyleaf{
+display:inline-flex;
+flex:1;
+padding-right: 3px;
+
+}
+/*@media queries*/
+@media only screen and (max-width:500px){
+  label {
+    display:block;
+    cursor:pointer;
+    float:left;
+  }
+  .nav-bar {
+    text-align:center;
+    width:100%;
+    display:none;
+  }
+  .nav-bar a {
+    display:block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+
+  }
+  #toggle:checked + .nav-bar{
+    display:block;
+  }
+}
+
 body {
-  background-color: #e6e6e6;
+  background-color: #F0EAD6;
 }
-li {
-  display: inline-block;
-  border-right: 5px;
+/* Navigation Bar */
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height:70px;
+  color:#00b8e1;
+  display:
+
 }
-ul {
-  padding: auto;
-  padding-right: 10px;
+#toggle{
+  display:none;
 }
- .main-nav li {
-   padding-top: 3em;
+.nav-bar{
+  background-color: none;
+  overflow: hidden;
+  border-bottom: 2px;
+  border-color: white;
+  position: sticky;
+}
+.nav-bar a {
+   color: black;
+   justify-content: flex-end;
    text-align: center;
- }
+   text-transform: uppercase;
+   padding-right:1.5em;
+   text-decoration: underline;
+}
+
 h1 {
   font-size: 1em;
   font-style: normal;
   padding-top: 10px;
+  color: black;
 }
-/* CSS for Art.html*/
-.fortnite {
-  width: 50%;
-}
+
 /* CSS for RealEstate.html*/
-.super{
-  width: 50%;
-}
+
+
 /* CSS for Lawnservices.html*/
 
 /* CSS for Contact Me.html*/
+ .test{
+   padding-right:26px;
+ }
  .jonface {
-  width: 50%;
-  height:
+   position: sticky;
+   border-radius: 25px;
+   background-color:#030303;
  }
  .form{
-   border-style: inset;
+   width: 20em;
+   border-radius: 10px;
+   float:center;
+   color:#black;
+   background-color: #00b8e1;
+   border:0px;
+ }
+ fieldset{
+   border:none;
+   align-content: center;
+ }
+ button{
+ background-color: #ff3b3f;
+ border-radius: 10px;
+ }
+
+ .bio {
+
  }
 input[type=text], select {
-  width: 50%;
+  width: 100%;
   display: list-item;
-
+  border-radius: 5px;
+  width: 20em;
 }
 input[type=email], select {
-  width: 50%;
+  width: 100%;
   display: list-item;
+  border-radius: 5px;
+  width: 20em;
+}
+/* Footer*/
+footer{
+  font-style: italic;
+  font-size: 1.6;
+
 }
