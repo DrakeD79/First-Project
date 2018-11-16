@@ -1,6 +1,6 @@
 /* Jon Website CSS*/
 .first{
-  display:flex;
+  display:inline-flex;
   color: black;
   padding: 10px;
   flex:1;
@@ -9,6 +9,17 @@
  color:#a9a9a9
  display: inline-flex;
 
+}
+.third{
+  display:inline-block ;
+}
+.row{
+}
+h1 {
+  font-size: 1em;
+  font-style: normal;
+  padding-top: 10px;
+  color: black;
 }
 .homes{
   padding-left: 10px;
@@ -52,16 +63,13 @@ padding-right: 3px;
     margin:0 auto;
   }
 }
-a:visited {
-    color: #00b8e1;
+@media only screen and (min-width:501px){
+  label{
+    display:none;
+  }
 }
-a:link {
-    color: green;
-}
-a:hover {
-    background-color: #00b8e1;
-    border-radius: 6px;
-}
+
+
 body {
   background-color: #F0EAD6;
 }
@@ -72,7 +80,16 @@ label {
   line-height:70px;
   color:#00b8e1;
   display:
-
+}
+a:visited {
+    color: #00b8e1;
+}
+a:link {
+    color: green;
+}
+a:hover {
+    background-color: #00b8e1;
+    border-radius: 6px;
 }
 #toggle{
   display:none;
@@ -88,20 +105,85 @@ label {
    color: black;
    justify-content: flex-end;
    text-align: center;
-   text-transform: uppercase;
    padding-right:1.5em;
    text-decoration: underline;
 }
 
-h1 {
-  font-size: 1em;
-  font-style: normal;
-  padding-top: 10px;
-  color: black;
-}
 
 /* CSS for RealEstate.html*/
 
+{
+ box-sizing: border-box;
+}
+.caption-container{
+  border-radius: 15px;
+}
+
+.container {
+ position: relative;
+}
+.mySlides {
+ display: none;
+}
+.cursor {
+ cursor: pointer;
+}
+.prev,
+.next {
+ cursor: pointer;
+ position: absolute;
+ top: 40%;
+ width: auto;
+ padding: 16px;
+ margin-top: -50px;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none;
+}
+
+
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+
+.caption-container {
+ text-align: center;
+ background-color: #222;
+ padding: 2px 16px;
+ color: white;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.column {
+ float: left;
+ width: 16.66%;
+}
+.demo {
+ opacity: 0.6;
+}
+.active,
+.demo:hover {
+ opacity: 1;
+}
 
 /* CSS for Lawnservices.html*/
 
@@ -118,7 +200,7 @@ h1 {
    width: 20em;
    border-radius: 10px;
    float:center;
-   color:#black;
+   color:black;
    background-color: #00b8e1;
    border:0px;
  }
@@ -150,80 +232,4 @@ input[type=email], select {
 footer{
   font-style: italic;
   font-size: 1.6;
-
-}
-/* Footer*/
-footer{
-  font-style: italic;
-  font-size: 1.6;
-}
- {
-  box-sizing: border-box;
-}
-
-
-.container {
-  position: relative;
-}
-.mySlides {
-  display: none;
-}
-.cursor {
-  cursor: pointer;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  float: left;
-  width: 16.66%;
-}
-.demo {
-  opacity: 0.6;
-}
-.active,
-.demo:hover {
-  opacity: 1;
 }

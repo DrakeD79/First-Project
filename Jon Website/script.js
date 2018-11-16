@@ -1,34 +1,11 @@
-const listItems = document.getElementByTagName('a');
-
-
-var elements = document.getElementsByClassName('nav-bar')
-
-
-for(let i = 0; i < listItems.length; i += 1) {
-  listItems[i].addEventListener('mouseover', () => {
-    listItems[i].textContent = listItems[i].textContent.toUpperCase();
-  });
-}
-
-function submitButton() {
-document.getElementById('submitform').submit();
-}
-function submitButton() {
-alert('Form has been submitted we will reach out within 24hrs, Thank you for your submission.');
-}
-
-function submitButton(){
-  document.getElementById('dropdown-notification').submit();
-}
+//slideshow//
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -49,4 +26,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+//Enlarge monkey drawing on mouseover//
+function bigImg(x) {
+    x.style.height = "400px";
+    x.style.width = "400px";
+}
+
+function normalImg(x) {
+    x.style.height = "200px";
+    x.style.width = "200px";
 }
