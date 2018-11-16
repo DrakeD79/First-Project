@@ -1,0 +1,235 @@
+/* Jon Website CSS*/
+.first{
+  display:inline-flex;
+  color: black;
+  padding: 10px;
+  flex:1;
+}
+.second{
+ color:#a9a9a9
+ display: inline-flex;
+
+}
+.third{
+  display:inline-block ;
+}
+.row{
+}
+h1 {
+  font-size: 1em;
+  font-style: normal;
+  padding-top: 10px;
+  color: black;
+}
+.homes{
+  padding-left: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-header {
+  text-align: center;
+  color: white;
+}
+.monkeyleaf{
+display:inline-flex;
+flex:1;
+padding-right: 3px;
+
+}
+/*@media queries*/
+@media only screen and (max-width:500px){
+  label {
+    display:block;
+    cursor:pointer;
+    float:left;
+  }
+  .nav-bar {
+    text-align:center;
+    width:100%;
+    display:none;
+  }
+  .nav-bar a {
+    display:block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+
+  }
+  #toggle:checked + .nav-bar{
+    display:block;
+  }
+  .homes {
+    display: flex;
+    width: 60%;
+    margin:0 auto;
+  }
+}
+@media only screen and (min-width:501px){
+  label{
+    display:none;
+  }
+}
+
+
+body {
+  background-color: #F0EAD6;
+}
+/* Navigation Bar */
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height:70px;
+  color:#00b8e1;
+  display:
+}
+a:visited {
+    color: #00b8e1;
+}
+a:link {
+    color: green;
+}
+a:hover {
+    background-color: #00b8e1;
+    border-radius: 6px;
+}
+#toggle{
+  display:none;
+}
+.nav-bar{
+  background-color: none;
+  overflow: hidden;
+  border-bottom: 2px;
+  border-color: white;
+  position: sticky;
+}
+.nav-bar a {
+   color: black;
+   justify-content: flex-end;
+   text-align: center;
+   padding-right:1.5em;
+   text-decoration: underline;
+}
+
+
+/* CSS for RealEstate.html*/
+
+{
+ box-sizing: border-box;
+}
+.caption-container{
+  border-radius: 15px;
+}
+
+.container {
+ position: relative;
+}
+.mySlides {
+ display: none;
+}
+.cursor {
+ cursor: pointer;
+}
+.prev,
+.next {
+ cursor: pointer;
+ position: absolute;
+ top: 40%;
+ width: auto;
+ padding: 16px;
+ margin-top: -50px;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none;
+}
+
+
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+
+.caption-container {
+ text-align: center;
+ background-color: #222;
+ padding: 2px 16px;
+ color: white;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.column {
+ float: left;
+ width: 16.66%;
+}
+.demo {
+ opacity: 0.6;
+}
+.active,
+.demo:hover {
+ opacity: 1;
+}
+
+/* CSS for Lawnservices.html*/
+
+/* CSS for Contact Me.html*/
+ .test{
+   padding-right:26px;
+ }
+ .jonface {
+   position: sticky;
+   border-radius: 25px;
+   background-color:#030303;
+ }
+ .form{
+   width: 20em;
+   border-radius: 10px;
+   float:center;
+   color:black;
+   background-color: #00b8e1;
+   border:0px;
+ }
+ fieldset{
+   border:none;
+   align-content: center;
+ }
+ button{
+ background-color: #ff3b3f;
+ border-radius: 10px;
+ }
+
+ .bio {
+
+ }
+input[type=text], select {
+  width: 100%;
+  display: list-item;
+  border-radius: 5px;
+  width: 20em;
+}
+input[type=email], select {
+  width: 100%;
+  display: list-item;
+  border-radius: 5px;
+  width: 20em;
+}
+/* Footer*/
+footer{
+  font-style: italic;
+  font-size: 1.6;
+}
